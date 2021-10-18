@@ -1,13 +1,142 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+nav{
+  background-color: rgb(80, 189, 80);
+  padding: .9rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+}
+nav h1{
+  font-size: 1.7rem;
+  letter-spacing: 1px;
+}
+nav button{
+  padding: .4rem 1.2rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: .5rem;
+  border: none;
+  background-color: rgb(212, 226, 84);
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 8px gray;
+  cursor: pointer;
+}
+nav button:hover{
+  box-shadow: 2px 2px 8px rgb(80, 189, 80);
+}
+main{
+  min-height: 100vh;
+}
+footer{
+  background-color: rgb(80, 189, 80);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;font-size: 1.2rem;
+  text-align: center;
+}
+.taskForm{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.taskForm>form{
+  box-shadow: 2px 2px 8px gray;
+  width: 450px;
+  margin-top: 7rem;
+  padding: 1.5rem 1rem;
+  border-radius: .5rem;
+}
+.taskForm>form>div{
+  display: flex;
+  flex-direction: column;
+  grid-gap: .3rem;
+  margin-bottom: 1rem;
+}
+.taskForm input, textarea{
+  padding: .5rem;
+  border: none;
+  box-shadow: 1px 1px 6px gray;
+  outline: none;
+  border-radius: .3rem;
+}
+.taskForm label{
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.taskForm button{
+  background-color: rgb(80, 189, 80);
+  padding: .4rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: .2rem;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 8px gray;
+  cursor: pointer;
+}
+.taskForm button:hover{
+  box-shadow: 2px 2px 8px #fff;
+}
+.allTask{
+  padding: 2rem 2rem;
+}
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+}
+.card{
+  box-shadow: 2px 2px 8px gray;
+  padding: 1rem;
+  opacity: .7;
+  border-radius: .3rem;
+}
+.card h1{
+  font-size: 1.5rem;
+  margin-bottom: .6rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+}
+.card p{
+  letter-spacing: .4px;
+  line-height: 1.2rem;
+}
+.card>div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+.card button{
+  padding: .4rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: .2rem;
+  border: none;
+  color: #fff;
+  letter-spacing: 1px;
+  box-shadow: 2px 2px 8px gray;
+  cursor: pointer;
+}
+.update{
+  background-color: rgb(80, 189, 80);
+}
+.delete{
+  background-color: rgb(231, 86, 86);
 }
